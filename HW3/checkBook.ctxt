@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=checkBook
+comment0.text=\n\ The\ CheckRegister\ will\ store\ all\ checks.\ It\ stores\n\ the\ checkNumber,\ payee,\ amount\ and\ reason.\ \n\ @author\ Celeste\ Kimimila\n\ @version\ 2017.06.06\n
+comment1.params=
+comment1.target=checkBook()
+comment2.params=newCheck
+comment2.target=void\ addCheck(Checks)
+comment3.params=
+comment3.target=void\ printList()
+numComments=4

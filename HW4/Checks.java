@@ -61,7 +61,7 @@ public class Checks implements java.io.Serializable {
           public static void writeFile3() throws IOException {
 	PrintWriter pw = new PrintWriter(new FileWriter("checkreg.txt"));
  
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 1; i++) {
 		pw.write("Celeste Kimimila                            " + "00"+ Checks.num);
 		pw.write("Pay to the Order of: " + Checks.pay + "      $" + Checks.amt);
 		pw.write("Memo: " + Checks.why);

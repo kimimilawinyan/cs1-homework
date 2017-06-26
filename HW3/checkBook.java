@@ -1,4 +1,9 @@
 import java.util.*;
+import java.io.ObjectOutputStream;
+import java.io.FileOutputStream;
+import java.nio.file.*;
+import java.io.ObjectInputStream;
+import java.io.FileInputStream;
 
 /*
  * The CheckRegister will store all checks. It stores
@@ -9,11 +14,14 @@ import java.util.*;
 
 public class checkBook
 {
+    private double balance;
+    
     public class checkRegister {
     private String name;
 
     public checkRegister(String bookName){
         name = bookName;
+        
     }
     
     private ArrayList<checkBook> register;

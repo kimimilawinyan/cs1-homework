@@ -4,13 +4,14 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
+import java.io.Serializable;
 /**
  * Check details
  *
  * @author Celeste Kimimila 
  * @version .01
  */
-public class Checks implements java.io.Serializable {
+public class Checks implements Serializable {
 
     static public int num;
 
@@ -25,7 +26,7 @@ public class Checks implements java.io.Serializable {
     /**
      * Constructor for objects of class Check
      */
-    public Checks(int checkNumber, double amount, String payee, String reason) {
+    public Checks Serializable(int checkNumber, double amount, String payee, String reason) {
    
        this.num = checkNumber;
        this.amt = amount;
@@ -58,11 +59,29 @@ public class Checks implements java.io.Serializable {
         
 
     }
+
+    public void writeFile(){
+        Checks placeHolder = null;
+        int indexOfChecks = 0;
+        while(Checks.size() != 0){
+            String nameOfNewFile = "check";
+            nameOfNewFile.concat(indexOfChecks);
+            PrintWriter newFile = new PrintWriter(nameOfNewFile);
+            FileOutputStream outF = new FileOutputStream(nameOfFile);
+            ObjectOutputStream outS = new ObjectOutputStream(outF);
+            outS.writeObject(outS);
+//When you don't have this, undesired bytes could be remaining in the
+//buffer; thus, it's not only a good practice to flush out the
+//buffer, but it's required.
+            outS.flush();
+            indexOfChecks++;
+        }
+    }
           public static void writeFile3() throws IOException {
 	PrintWriter pw = new PrintWriter(new FileWriter("checkreg.txt"));
  
 	for (int i = 0; i < 1; i++) {
-		pw.write("Celeste Kimimila                            " + "00"+ Checks.num);
+		pw.write("Celeste Kimimila" + "00"+ Checks.num);
 		pw.write("Pay to the Order of: " + Checks.pay + "      $" + Checks.amt);
 		pw.write("Memo: " + Checks.why);
 		

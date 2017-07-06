@@ -1,1 +1,1 @@
-Celeste Kimimila                            002Pay to the Order of: bob      $13.45Memo: rent
+Celeste Kimimila                            000Pay to the Order of: null      $0.0Memo: null

@@ -63,8 +63,8 @@ public class Checks implements Serializable {
     public void writeFile(){
         Checks placeHolder = null;
         int indexOfChecks = 0;
-        while(Checks.size() != 0){
-            String nameOfNewFile = "check";
+        while(checks.size() != 0){
+            String nameOfNewFile = "checkreg";
             nameOfNewFile.concat(indexOfChecks);
             PrintWriter newFile = new PrintWriter(nameOfNewFile);
             FileOutputStream outF = new FileOutputStream(nameOfFile);

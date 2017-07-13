@@ -1,12 +1,14 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+/**
+ * Homework 5
+ * Using the Main class for a menu, and user interaction.
+ * Celeste Kimimila
+ */
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+It's not able to convert my double and int, so I can't get those to print.
+
+for now though:
+Press 1 to create a new checkbook
+Press 2 to access an existing checkbook
+Press 3 to write a check
+Press 4 to quit
+

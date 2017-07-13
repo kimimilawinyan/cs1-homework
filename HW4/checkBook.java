@@ -9,8 +9,7 @@ import java.io.IOException;
  * The CheckRegister will store all checks. It stores
  * the checkNumber, payee, amount and reason. 
  * @author Celeste Kimimila
-
-* @version 2017.06.06
+ * @version 2017.06.06
  */
 
 public class checkBook
@@ -28,23 +27,17 @@ public class checkBook
                 check.printCheck();
             }
     }
-    public void writeFile(){
-        Checks placeHolder = null;
-        int indexOfChecks = 0;
-        while(checks.size() != 0){
-            String nameOfNewFile = "check.txt";
-            nameOfNewFile.concat(indexOfChecks);
-            PrintWriter newFile = new PrintWriter(nameOfNewFile);
-            FileOutputStream outF = new FileOutputStream(nameOfFile);
-            ObjectOutputStream outS = new ObjectOutputStream(outF);
-            outS.writeObject(outS);
-//When you don't have this, undesired bytes could be remaining in the
-//buffer; thus, it's not only a good practice to flush out the
-//buffer, but it's required.
-            outS.flush();
-            indexOfChecks++;
-        }
-    }
-
+  public static void writeFile3() throws IOException {
+	PrintWriter pw = new PrintWriter(new FileWriter("checkreg.txt"));
+ 
+	for (int i = 0; i < 1; i++) {
+		pw.write("Celeste Kimimila                            " + "00"+ Checks.num);
+		pw.write("Pay to the Order of: " + Checks.pay + "      $" + Checks.amt);
+		pw.write("Memo: " + Checks.why);
+		
+	}
+ 
+	pw.close();
 }
 
+}

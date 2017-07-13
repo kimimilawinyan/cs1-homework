@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\n\ Homework\ 5\n\ Using\ the\ Main\ class\ for\ a\ menu,\ and\ user\ interaction.\n\ Celeste\ Kimimila\n
+comment1.params=
+comment1.target=void\ askUser()
+comment2.params=s
+comment2.target=java.lang.String\ getValue(java.lang.String)
+comment3.params=theCheck
+comment3.target=void\ printCheck(Check)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

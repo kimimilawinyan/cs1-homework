@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Check
 comment0.text=\n\ Homework\ 5\n\ Writing\ Checks\ for\ Main\n\ Celeste\ Kimimila\n
-comment1.params=num\ amt\ why\ pay
+comment1.params=num\ amt\ pay\ why
 comment1.target=Check(int,\ double,\ java.lang.String,\ java.lang.String)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Check\n
 comment10.params=

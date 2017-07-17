@@ -18,13 +18,13 @@ public class Check implements Serializable{
     /**
      * Constructor for objects of class Check
      */
-    public Check(int num, double amt, String why, String pay)
+    public Check(int num, double amt, String pay, String why)
     {
         // initialise instance variables
         this.num=num;
         this.amt=amt;
-        this.why=why;
         this.pay=pay;
+        this.why=why;
     }
 
     public void printCheck(){

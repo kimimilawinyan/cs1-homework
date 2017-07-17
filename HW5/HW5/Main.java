@@ -21,7 +21,7 @@ public class Main
     static double checkAmt; //user input string form
     static double cvtAmount; //converted amount
     static int cvtCheckNum;
-    //static String checkWhy;
+    static String checkWhy;
     static Checkbook cktCheckBook;
 
     private static void askUser(){
@@ -61,7 +61,6 @@ public class Main
             askUser();
             while (input.hasNext()) {
                 menuDisplay = input.nextLine();
-
                 switch (menuDisplay) {
                     case "1":
 //creates new checkbook object
@@ -73,7 +72,7 @@ public class Main
                     case "2":
 //access the checkbook object
                         try{
-                            in = new ObjectInputStream(new FileInputStream("checreg.txt"));
+                            in = new ObjectInputStream(new FileInputStream("checkreg.txt"));
                             while ((checkList[counter] = (Check)in.readObject()) != null){
                                 System.out.println("Here is your checkbook: ");
                                 System.out.println(checkList[counter]);

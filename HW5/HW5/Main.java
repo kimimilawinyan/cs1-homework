@@ -130,6 +130,7 @@ public class Main
                             System.out.println("Your checkbook is saved in checkreg.txt");
                             System.out.println("Done!");
                             input.close();
+                            // this exit helped stop the exception error on close.
                             System.exit(0);
                         }
                         break;

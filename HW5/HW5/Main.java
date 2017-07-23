@@ -78,14 +78,17 @@ public class Main
                     case "2":
 //access the checkbook object
                         try{
-                            in = new ObjectInputStream(new FileInputStream("checkreg.txt"));
-                            Checkbook open = null;
-                            open = (Checkbook) in.readObject();
+                            
+                            FileInputStream inputFileStream = new FileInputStream("checkreg.txt");
+                            ObjectInputStream objectInputStream = new ObjectInputStream(inputFileStream);
+                            
                             while ((checkList[counter] = (Check)in.readObject()) != null){
                                 
                                 System.out.println("Here is your checkbook: ");
                                 System.out.println(checkList[counter]);
                                 counter = counter + 1;
+                                objectInputStream.close();
+                                inputFileStream.close();
                                 os.flush();
                             }
                         } catch(Exception e){

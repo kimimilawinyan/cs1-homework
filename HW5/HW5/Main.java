@@ -3,6 +3,11 @@ import java.io.BufferedReader;
 import java.util.Scanner;
 import java.io.*;
 import java.util.*;
+import java.io.ObjectOutputStream;
+import java.io.FileOutputStream;
+import java.nio.file.*;
+import java.io.ObjectInputStream;
+import java.io.FileInputStream;
 /**
  * Homework 5
  * Using the Main class for a menu, and user interaction.
@@ -23,6 +28,7 @@ public class Main
     static int cvtCheckNum;
     static String checkWhy;
     static Checkbook cktCheckBook;
+    static ObjectOutputStream os;
 
     private static void askUser(){
         System.out.println("Press 1 to create a new checkbook");
@@ -73,10 +79,14 @@ public class Main
 //access the checkbook object
                         try{
                             in = new ObjectInputStream(new FileInputStream("checkreg.txt"));
+                            Checkbook open = null;
+                            open = (Checkbook) in.readObject();
                             while ((checkList[counter] = (Check)in.readObject()) != null){
+                                
                                 System.out.println("Here is your checkbook: ");
                                 System.out.println(checkList[counter]);
                                 counter = counter + 1;
+                                os.flush();
                             }
                         } catch(Exception e){
                             System.out.println("Option 2 " + e.toString());
@@ -117,6 +127,7 @@ public class Main
                             System.out.println("Your checkbook is saved in checkreg.txt");
                             System.out.println("Done!");
                             input.close();
+                            System.exit(0);
                         }
                         break;
                     default: break;

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Checkbook
-comment0.text=\n\ Homework\ 5\n\ Holding\ Checks\ for\ Main\n\ Celeste\ Kimimila\n
+comment0.text=\n\ Homework\ 6\n\ Holding\ Checks\ for\ Main\n\ Celeste\ Kimimila\ &\ Megan\ Niemitalo\n\ version\ 1\ -\ working\ out\ errors.\ This\ can\ now\ open\ a\ checkbook,\ and\ add\ to\ it,\ as\ well\ as\ print\ the\ checks.\n
 comment1.params=
 comment1.target=Checkbook()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Checkbook\n

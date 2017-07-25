@@ -11,8 +11,8 @@ import java.io.FileInputStream;
 /**
  * Homework 6
  * Using the Main class for a menu, and user interaction.
- * Celeste Kimimila
- * Megan Niemetalo
+ * Celeste Kimimila & Megan Niemitalo
+ * version 1 - working out errors. This can now open a checkbook, and add to it, as well as print the checks.
  */
 public class Main
 {
@@ -29,7 +29,7 @@ public class Main
     static int cvtCheckNum;
     static String checkWhy;
     static Checkbook cktCheckBook;
-    static ObjectOutputStream os;
+
 
     private static void askUser(){
         System.out.println("Press 1 to create a new checkbook");
@@ -63,7 +63,6 @@ public class Main
         String checkNum;
         String checkPay;
         String checkWhy;
-        System.err.println ("Starting");
         try{
 //menu layout - user interaction is here
             askUser();
@@ -87,7 +86,7 @@ public class Main
                                 System.out.println("Here is your checkbook: ");
                                 System.out.println(checkList[counter]);
                                 counter = counter + 1;
-                                os.flush();
+//The counter was not working...
                             }*/ 
                         } catch(Exception e){
                             System.out.println("Option 2 " + e.toString());
@@ -117,7 +116,7 @@ public class Main
                             cktCheckBook.appendToFile(newCheck);
                         }
                         break;
-                        
+// added to print the checklist by using the method we created in Checkbook.java - ckt
                     case "4":
                         if(cktCheckBook == null){
                             System.out.println("Please create checkbook");
@@ -128,7 +127,7 @@ public class Main
                         break;
 
                     case "5":
-                        //quits the program and saves checkbook to a serialized file
+//quits the program and saves checkbook to a serialized file
                         if(cktCheckBook == null){
                             System.out.println("Please create checkbook");
                             break;
@@ -137,6 +136,7 @@ public class Main
                             System.out.println("Your checkbook is saved in checkreg.txt");
                             System.out.println("Done!");
                             input.close();
+//added the System exit to stop the err on case 5, previously case 4
                             System.exit(0);
                         }
                         break;

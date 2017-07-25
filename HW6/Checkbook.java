@@ -5,9 +5,10 @@ import java.nio.file.*;
 import java.io.ObjectInputStream;
 import java.io.FileInputStream;
 /**
- * Homework 5
+ * Homework 6
  * Holding Checks for Main
- * Celeste Kimimila
+ * Celeste Kimimila & Megan Niemitalo
+ * version 1 - working out errors. This can now open a checkbook, and add to it, as well as print the checks.
  */
 public class Checkbook
 {

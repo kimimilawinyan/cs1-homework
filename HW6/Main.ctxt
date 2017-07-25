@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Main
-comment0.text=\n\ Homework\ 6\n\ Using\ the\ Main\ class\ for\ a\ menu,\ and\ user\ interaction.\n\ Celeste\ Kimimila\n\ Megan\ Niemetalo\n
+comment0.text=\n\ Homework\ 6\n\ Using\ the\ Main\ class\ for\ a\ menu,\ and\ user\ interaction.\n\ Celeste\ Kimimila\ &\ Megan\ Niemitalo\n\ version\ 1\ -\ working\ out\ errors.\ This\ can\ now\ open\ a\ checkbook,\ and\ add\ to\ it,\ as\ well\ as\ print\ the\ checks.\n
 comment1.params=
 comment1.target=void\ askUser()
 comment2.params=s

@@ -9,9 +9,10 @@ import java.nio.file.*;
 import java.io.ObjectInputStream;
 import java.io.FileInputStream;
 /**
- * Homework 5
+ * Homework 6
  * Using the Main class for a menu, and user interaction.
  * Celeste Kimimila
+ * Megan Niemetalo
  */
 public class Main
 {
@@ -34,7 +35,8 @@ public class Main
         System.out.println("Press 1 to create a new checkbook");
         System.out.println("Press 2 to access an existing checkbook");
         System.out.println("Press 3 to write a check");
-        System.out.println("Press 4 to quit");
+        System.out.println("Press 4 to print checks");
+        System.out.println("Press 5 to quit");
     }
 
     private static String getValue(String s) {
@@ -78,9 +80,9 @@ public class Main
                     case "2":
 //access the checkbook object
                         try{
-                            System.err.println ("case 2 start");
                             cktCheckBook = new Checkbook();
-                            System.err.println ("case 2 after new");
+                            System.out.println("Your checkbook is now open");
+
                             /*while ((checkList[counter] = (Check)in.readObject()) != null){
                                 System.out.println("Here is your checkbook: ");
                                 System.out.println(checkList[counter]);
@@ -116,8 +118,16 @@ public class Main
                         }
                         break;
                         
-
                     case "4":
+                        if(cktCheckBook == null){
+                            System.out.println("Please create checkbook");
+                        } else {
+                            cktCheckBook.printList();
+
+                        }
+                        break;
+
+                    case "5":
                         //quits the program and saves checkbook to a serialized file
                         if(cktCheckBook == null){
                             System.out.println("Please create checkbook");

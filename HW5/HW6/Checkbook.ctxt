@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Checkbook
+comment0.text=\n\ Homework\ 5\n\ Holding\ Checks\ for\ Main\n\ Celeste\ Kimimila\n
+comment1.params=
+comment1.target=Checkbook()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Checkbook\n
+comment2.params=newCheck
+comment2.target=void\ addCheck(Check)
+comment3.params=
+comment3.target=int\ getNumberOfCheckList()
+comment4.params=checkName
+comment4.target=void\ appendToFile(Check)
+comment4.text=\n\ User\ saves\ check\ objects\ one\ by\ one\ to\ a\ text\ file\ in\ their\ serialized\ format.\n
+comment5.params=
+comment5.target=void\ saveOverFile()
+comment5.text=\n\ Once\ the\ user\ has\ appended\ all\ checks\ to\ the\ text\ file,\ the\ user\ must\ saveOverFile\ to\ close\n\ the\ output\ stream\ and\ save\ all\ entries\ to\ the\ file.\n
+comment6.params=
+comment6.target=void\ depersist()
+comment7.params=
+comment7.target=void\ printList()
+numComments=8

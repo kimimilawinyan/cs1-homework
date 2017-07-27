@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=testCheckbook
+comment0.text=\n\ Assertions\n\n\ Celeste\ Kimimila\n
+comment1.params=
+comment1.target=testCheckbook()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ testCheckbook\n
+comment2.params=
+comment2.target=void\ testAmount()
+comment3.params=
+comment3.target=void\ testForIncorrectAmount()
+comment4.params=
+comment4.target=void\ testCheckListSize()
+comment4.text=Tests\ that\ testCheckListSize\ method\ correctly\ accounts\ for\ the\ number\ of\ check\ objects\nin\ checkbook
+numComments=5

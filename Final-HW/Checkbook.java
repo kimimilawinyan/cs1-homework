@@ -75,8 +75,8 @@ public class Checkbook
     }
 
     public void depersist(){
-        int counter = 0;
         try{
+            int counter = 0;
             ObjectInputStream in = new ObjectInputStream(new FileInputStream("checkreg.txt"));
             System.out.println("Your checkbook is now open! ");
             Check tempCheck = null;

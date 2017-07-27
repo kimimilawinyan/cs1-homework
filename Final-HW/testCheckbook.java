@@ -23,14 +23,14 @@ public class testCheckbook
     //Tests that get.Amt method is passing check amount value
     @Test
     public void testAmount() {
-        Check testCheck = new Check(1, 200.0, "a", "b");
+        Check testCheck = new Check(200.0);
         assertEquals(200.0, testCheck.getAmt(), 0.0);
     }
     
     //Tests that get.Amt is passing check amount value with a negative test
     @Test
     public void testForIncorrectAmount() {
-        Check testCheck = new Check(2, 400.0, "c", "d");
+        Check testCheck = new Check(200.0);
         assertFalse(testCheck.getAmt() != 200.0);
     }
     
@@ -39,9 +39,9 @@ public class testCheckbook
     @Test
     public void testCheckListSize() {
         Checkbook testCheckbook = new Checkbook();
-        Check testCheck = new Check(3, 200.0, "e", "f");
+        Check testCheck = new Check(00.0);
         testCheckbook.addCheck(testCheck);
-        Check testCheck2 = new Check(4, 200.0, "g", "h");
+        Check testCheck2 = new Check(200.0);
         testCheckbook.addCheck(testCheck);
         assertEquals(testCheckbook.getNumberOfCheckList(), 2, 0);
         

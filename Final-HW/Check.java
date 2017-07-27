@@ -20,6 +20,14 @@ public class Check implements Serializable{
     /**
      * Constructor for objects of class Check
      */
+    
+    public Check(double amtTwo) {
+        amt = amtTwo;
+        num = 1;
+        pay = "unknown";
+        why = "unknown";
+       
+    }
     public Check(int num, double amt, String pay, String why)
     {
         // initialise instance variables
